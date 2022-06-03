@@ -145,6 +145,7 @@ class TareasController extends Controller
     public function destroy(Tarea $tarea)
     {
         $tarea->delete();
+        return redirect()->route('tareas.index');
 
     }
 

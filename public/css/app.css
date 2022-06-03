@@ -10096,7 +10096,7 @@ h3 {
     justify-content: center;
     color: #fff;
     text-align: center;
-    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    background: linear-gradient(to right, #2fa360, #38c172);
     margin-top: 30px;
     text-decoration: none;
     padding: 10px 5px;
@@ -10142,6 +10142,22 @@ h3 {
     padding: 10px 20px;
     border-radius: 10%;
     margin: 2px;
+  }
+
+  .btnheader{
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 2px;
+
+  }
+  .btnheader:hover{
+    color: #fff;
+    text-decoration:none
   }
 
 

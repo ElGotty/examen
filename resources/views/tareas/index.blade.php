@@ -3,6 +3,15 @@
 @section('content')
 
     @if(count($tareas) > 0)
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-2" >
+                <div class="showTarea">
+                    <a class="btnheader" style="border-radius: 5%" href="{{route('tareas.create')}}" ><i class="fa fa-pencil-square-o fa-2x"  aria-hidden="true"></i> </a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row">
         @foreach ($tareas as $tarea)
 
@@ -40,6 +49,7 @@
                     <div class="card-header">
                         <h3 class="card-title"> {{ __('No hay tareas registradas') }} </h3>
                     </div>
+                    <a class="btnheader" href="{{route('tareas.create')}}" ><i class="fa fa-pencil-square-o fa-2x"  aria-hidden="true"></i> </a>
                 </div>
             </div>
         </div>
