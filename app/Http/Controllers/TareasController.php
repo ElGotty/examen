@@ -115,14 +115,14 @@ class TareasController extends Controller
             ]);
 
             if($validator->fails()){
-                return redirect()->route('tareas.edit')->withInput()->withErrors($validator->errors());
+                return redirect()->route('tareas.edit', $id)->withInput()->withErrors($validator->errors());
             }
             else{
 
                 $tarea = Tarea::find($id);
                 $tarea->users()->detach();
                 $tarea->update($request->all());
-                $usuarios = $request->input('usuariosA');
+                $usuarios = $request->input('usuarios');
                 foreach($usuarios as $usuario){
                     $user = User::find($usuario);
                     $tarea->users()->save($user);

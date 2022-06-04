@@ -2,9 +2,9 @@
 
 @section('content')
 
-<div class="container" style="width: 40%">
-    <div class="justify-content-center">
-        <div class="ol-md-9">
+<div class="container" >
+    <div class=" row justify-content-center">
+        <div class="col-md-8">
             <div class="showTarea">
                 <div class="card-header">
                     <h3 class="card-title"> Tarea: {{$tarea->nombre }} </h3>
